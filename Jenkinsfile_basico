@@ -4,6 +4,9 @@ pipeline {
 		VARIABLE_X='Variable Ejemplo SCM Usb cali'
 		PROJECT_NAME='SCM_CALI - Basico'
     }
+	triggers {
+        cron('H/1 * * * *')
+    }
     stages {
 		stage('Etapa 0') {
 			steps {
